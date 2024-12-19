@@ -5,11 +5,12 @@
     <title>旅日記web</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
-  <body>
+  <body class="home">
+    <h1>旅日記web</h1>
     <ul>
-      <li><a href="{{ url_for('add.list') }}">記録する</a></li>
-      <li><a href="{{ url_for('trip.list')}}">人気の場所</a></li>
-      <li><a href="{{ url_for('map.list')}}">地図で見る</a></li>
+      <div><a href="{{ url_for('add.list') }}">記録する</a></div>
+      <div><a href="{{ url_for('trip.list')}}">人気の場所</a></div>
+      <div><a href="{{ url_for('map.list')}}">地図で見る</a></div>
     </ul>
   </body>
 </html>
