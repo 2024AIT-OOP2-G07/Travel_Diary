@@ -2,3 +2,21 @@
   margin: 0;
   padding: 0;
 }
+
+.home h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10%;
+  font-size: 128px;
+}
+
+.home ul {
+  display: flex;
+  justify-content: center;
+  gap: 10%;
+  font-size: 32px;
+  margin: auto;
+  background-color: azure;
+}
+
