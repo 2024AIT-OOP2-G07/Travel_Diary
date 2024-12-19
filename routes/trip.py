@@ -13,8 +13,6 @@ def list():
         .where(prace.evaluation == 5)\
         .order_by(prace.day.desc())\
         .limit(5)
-    
-    print(trip_data)
 
     return render_template("trip.html",trip_data = trip_data)
 
