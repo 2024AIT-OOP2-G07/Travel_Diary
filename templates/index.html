@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>旅日記web</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+  </head>
+  <body>
+    <ul>
+      <li><a href="{{ url_for('add.list') }}">記録する</a></li>
+      <li><a href="{{ url_for('trip.list')}}">人気の場所</a></li>
+      <li><a href="{{ url_for('map.list')}}">地図で見る</a></li>
+    </ul>
+  </body>
+</html>
