@@ -6,6 +6,32 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
   <body>
-    <h1>旅先を追加する</h1>
+    <h1>記録する</h1>
+
+    {% if error %}
+      <p class="error">{{ error }}</p>
+    {% endif %}
+
+    <ul class="breadcrumb">
+      <li><a href="{{ url_for('index') }}">HOME</a></li>
+    </ul>
+
+    <form action="{{ url_for('add.add') }}" method="post">
+      <label>訪れた場所: <input type="text" name="name" required /></label><br />
+      <label>訪れた日時: <input type="date" name="day" required /></label><br />
+      <label>住所: <input type="text" name="address" required /></label><br />
+      <label>評価 
+        <select name="evaluation" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label><br />
+      <label>ひとこと: <input type="text" name="comment" required /></label><br />
+      
+      <button type="submit">追加</button>
+    </form>
   </body>
 </html>
