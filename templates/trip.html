@@ -6,6 +6,31 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
   </head>
   <body>
+    <a href="{{ url_for('index') }}">戻る</a>
     <h1>人気の旅先</h1>
+    <table>
+      <thead>
+        <tr>
+            <th>&nbsp;</th>
+            <th>場所の名前</th>
+            <th>日時</th>
+            <th>住所</th>
+            <th>評価</th>
+            <th>コメント</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for trip_data in trip_data %}
+        <tr>
+            <td>No.{{ loop.index }}</td>
+            <td>{{ trip_data.name }}</td>
+            <td>{{ trip_data.day }}</td>
+            <td>{{ trip_data.address }}</td>
+            <td>{{ trip_data.evaluation }}</td>
+            <td>{{ trip_data.comment }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+  </table>
   </body>
 </html>
