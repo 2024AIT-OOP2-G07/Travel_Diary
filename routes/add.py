@@ -2,7 +2,7 @@ from flask import Blueprint, render_template,request,url_for,redirect
 from urllib.request import Request, urlopen
 from urllib.parse import quote
 import json
-from models import prace
+from models import Place
 
 
 add_bp = Blueprint("add", __name__, url_prefix="/add")
@@ -28,7 +28,7 @@ def add():
                 "add.html", error="住所が見つかりませんでした"
             )
 
-        prace.create(
+        Place.create(
             name=name, day=day, address=address, evaluation=evaluation, comment=comment, lat=coordinates[1], lon=coordinates[0]
         )
         return redirect(url_for("add.list"))
