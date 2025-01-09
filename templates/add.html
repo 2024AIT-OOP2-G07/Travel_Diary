@@ -16,7 +16,7 @@
     {% endif %}
 
     <div>
-      <div class="grid" action="{{ url_for('add.add') }}" method="post">
+      <form class="grid" action="{{ url_for('add.add') }}" method="post">
         <div>訪れた場所</div>
         <div>
           <input type="text" name="name" required />
@@ -45,7 +45,7 @@
         </div>
         
         <button class="submit" type="submit">追加</button>
-      </div>
+      </form>
     </div>
   </body>
 </html>
