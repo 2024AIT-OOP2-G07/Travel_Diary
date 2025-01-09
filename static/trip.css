@@ -15,6 +15,11 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  text-align: left;
+  margin: 20px auto;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
   width: 90%;
   max-width: 80%;
   margin: 20px auto;

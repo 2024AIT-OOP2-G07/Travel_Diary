@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+h1 {
+  font-size: 60px;
+  position: relative;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 120%;
+  background: #000;
+  position: absolute;
+  bottom: 10px;
+  left: -10%;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.links a {
+  text-decoration: none;
+  color: #000;
+  font-size: 20px;
+  position: relative;
+}
+
+.links a::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s;
+}
+
+.links a:hover::after {
+  width: 100%;
+}
