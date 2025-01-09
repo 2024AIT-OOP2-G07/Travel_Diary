@@ -1,0 +1,80 @@
+/* trip.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+
+h1:first-of-type {
+  text-align: left;
+  margin: 20px auto;
+  padding: 15px 0;
+  font-size: 24px;
+  font-weight: bold;
+  width: 90%;
+  max-width: 80%;
+  border-bottom: 1px solid #ccc;
+}
+
+h1:last-of-type {
+  text-align: left;
+  font-size: 20px;
+  margin: 10px auto 5px auto; /* 下の余白を調整 */
+  max-width: 70%;
+  font-weight: bold;
+}
+
+a {
+  display: block; /* ブロック要素として扱う */
+  margin: 0 auto 20px auto; /* 下の余白を設定 */
+  max-width: 70%; /* 「人気の場所」と同じ幅に揃える */
+  font-size: 14px;
+  color: #000;
+  text-align: left; /* 左揃え */
+  text-decoration: none;
+}
+
+main {
+  margin-top: 10px;
+}
+
+.comment-box {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 70%;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.comment-header .place-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comment-header .date {
+  font-size: 14px;
+  color: #555;
+}
+
+.comment-content {
+  padding: 10px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.comment-content p {
+  margin: 5px 0;
+}
