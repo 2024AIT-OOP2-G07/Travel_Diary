@@ -2,7 +2,7 @@ from peewee import Model, TextField, FloatField,DateField,IntegerField
 from .db import db
 
 
-class prace(Model):
+class Place(Model):
     day = DateField(formats='%Y-%m-%d %H:%M:%S')
     name = TextField(unique=True)
     address = TextField()

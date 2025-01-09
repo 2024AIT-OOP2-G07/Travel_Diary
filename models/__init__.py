@@ -1,8 +1,7 @@
-from peewee import SqliteDatabase
 from .db import db
-from .prace import prace
+from .place import Place
 
-MODELS = [prace]
+MODELS = [Place]
 
 # データベースの初期化関数
 def initialize_database():
