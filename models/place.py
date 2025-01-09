@@ -4,12 +4,12 @@ from .db import db
 
 class Place(Model):
     day = DateField(formats='%Y-%m-%d %H:%M:%S')
-    name = TextField(unique=True)
+    name = TextField()
     address = TextField()
     lat = FloatField()
     lon = FloatField()
     evaluation = IntegerField()
-    comment = FloatField()
+    comment = TextField()
 
     class Meta:
         database = db
