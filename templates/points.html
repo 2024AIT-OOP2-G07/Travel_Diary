@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>人気の旅先</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='points.css') }}" />
+  </head>
+  <body>
+    <header class="web-title-container">
+      <h1 class="web-title"><a href="{{ url_for('index') }}">旅日記Web</a></h1>
+      <a href="{{ url_for('index') }}" class="home-button">ホーム</a>
+    </header>
+    <h1 class="page-title">投稿一覧</h1>
+    <main>
+      {% for points_data in points_data %}
+      <div class="comment-box" id="{{ points_data.name }}">
+        <div class="comment-header">
+          <p class="place-name">{{ points_data.name }}</p>
+          <p>〒 {{ points_data.address }}</p>
+        </div>
+        <h2>コメント一覧</h2>
+        {% for comments in points_data.comments %}
+        <div class="comment-content">
+          <p>{{ comments.comment }}</p>
+          <p>{{ comments.day }}</p>
+        </div>
+        {% endfor %}
+      </div>
+      {% endfor %}
+    </main>
+  </body>
+</html>
