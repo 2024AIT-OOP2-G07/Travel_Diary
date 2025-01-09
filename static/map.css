@@ -1,0 +1,13 @@
+.no-line {
+  text-decoration: none;
+  /* color: inherit; 必要に応じてリンクの色を調整 */
+}
+
+#map {
+  width: 100vw;
+  height: 100vh;
+}
+
+.line {
+  border-top: 2px solid #555555;
+}
