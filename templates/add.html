@@ -4,34 +4,48 @@
     <meta charset="UTF-8" />
     <title>旅先追加</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='add.css') }}" />
   </head>
   <body>
-    <h1>記録する</h1>
+    <h1 class="home"><a href="{{ url_for('index') }}" class="no-line">旅日記Web</a></h1>
+    <div class="line"></div>
+    <h1 class="title">記録する</h1>
 
     {% if error %}
       <p class="error">{{ error }}</p>
     {% endif %}
 
-    <ul class="breadcrumb">
-      <li><a href="{{ url_for('index') }}">HOME</a></li>
-    </ul>
-
-    <form action="{{ url_for('add.add') }}" method="post">
-      <label>訪れた場所: <input type="text" name="name" required /></label><br />
-      <label>訪れた日時: <input type="date" name="day" required /></label><br />
-      <label>住所: <input type="text" name="address" required /></label><br />
-      <label>評価 
-        <select name="evaluation" required>
-          <option value="1">1</option>
-          <option value="2">2</option>
-          <option value="3">3</option>
-          <option value="4">4</option>
-          <option value="5">5</option>
-        </select>
-      </label><br />
-      <label>ひとこと: <input type="text" name="comment" required /></label><br />
-      
-      <button type="submit">追加</button>
-    </form>
+    <div>
+      <div class="grid" action="{{ url_for('add.add') }}" method="post">
+        <div>訪れた場所</div>
+        <div>
+          <input type="text" name="name" required />
+        </div>
+        <div>訪れた日時</div>
+        <div>
+          <input type="date" name="day" required />
+        </div>
+        <div>住所</div>
+        <div>
+          <input type="text" name="address" required />
+        </div>
+        <div>評価 </div>
+        <div>
+          <select name="evaluation" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+          </select>
+        </div>
+        <div>ひとこと</div>
+        <div>
+          <input type="text" name="comment" required />
+        </div>
+        
+        <button class="submit" type="submit">追加</button>
+      </div>
+    </div>
   </body>
 </html>

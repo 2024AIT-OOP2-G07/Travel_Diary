@@ -1,0 +1,55 @@
+.no-line {
+  text-decoration: none;
+  /* color: inherit; 必要に応じてリンクの色を調整 */
+  margin: 3%;
+}
+
+.line {
+  border-top: 2px solid #555555;
+}
+
+.home {
+  margin: 20px;
+}
+
+.title {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  margin-left: 100px;
+  margin-right: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 150px;
+  margin-right: 100px;
+  gap: 20px;
+}
+
+.grid div {
+  font-size: 1.5rem;
+}
+
+.grid div input {
+width: 100%;
+height: 100%;
+}
+
+.submit {
+  grid-column: 1 / -1;
+  font-size: 20px;
+}
+
+select{
+  width: 100%;
+  height: 100%;
+  background-color:gainsboro;
+}
+
+input{
+  border: none;
+  background-color:gainsboro;
+}
