@@ -3,20 +3,14 @@
   padding: 0;
 }
 
-.home h1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 10%;
-  font-size: 128px;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
 }
 
-.home ul {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  font-size: 32px;
-  margin: auto;
-  background-color: azure;
+#map {
+  width: 100vw;
+  height: 100vh;
 }
-
