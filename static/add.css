@@ -1,6 +1,6 @@
 .no-line {
   text-decoration: none;
-  /* color: inherit; 必要に応じてリンクの色を調整 */
+  color: #000; 
   margin: 3%;
 }
 
