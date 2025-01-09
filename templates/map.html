@@ -3,13 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <title>旅先地図</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link rel="stylesheet" href="{{ url_for('static', filename='map.css') }}" />
     <!-- MapLibre GL JS -->
     <script src="https://unpkg.com/maplibre-gl@4.3.2/dist/maplibre-gl.js"></script>
     <link href="https://unpkg.com/maplibre-gl@4.3.2/dist/maplibre-gl.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>旅先を地図で見る</h1>
+    <h1><a href="{{ url_for('index') }}" class="no-line">旅日記Web</a></h1>
+    <div class="line"></div>
     <div id="map" />
   </body>
   <script src="{{ url_for('static', filename='main.js') }}"></script>
