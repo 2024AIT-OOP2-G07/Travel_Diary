@@ -5,34 +5,56 @@ body {
   padding: 0;
   background-color: #f8f8f8;
 }
+a {
+  color: #000;
+  text-decoration: none;
+}
 
-h1:first-of-type {
-  text-align: left;
-  margin: 20px auto;
-  padding: 15px 0;
-  font-size: 24px;
-  font-weight: bold;
+/* Add styles for the header and home button */
+.web-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   width: 90%;
   max-width: 80%;
+  margin: 20px auto;
+  padding: 15px 0;
   border-bottom: 1px solid #ccc;
 }
 
-h1:last-of-type {
-  text-align: left;
-  font-size: 20px;
-  margin: 10px auto 5px auto; /* 下の余白を調整 */
-  max-width: 70%;
+.web-title {
+  margin: 0;
+  font-size: 24px;
   font-weight: bold;
 }
 
-a {
-  display: block; /* ブロック要素として扱う */
-  margin: 0 auto 20px auto; /* 下の余白を設定 */
-  max-width: 70%; /* 「人気の場所」と同じ幅に揃える */
-  font-size: 14px;
+.home-button {
+  font-size: 16px;
   color: #000;
-  text-align: left; /* 左揃え */
   text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ddd;
+}
+
+
+.front-text {
+  display: flex;
+  
+}
+
+.page-title{
+  text-align: left;
+  font-size: 20px;
+  margin: 10px auto 5px auto; /* 下の余白を調整 */
+  max-width: 72%;
+  font-weight: bold;
 }
 
 main {
