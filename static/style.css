@@ -15,14 +15,3 @@ body {
   padding: 0;
   background-color: #f8f8f8;
 }
-
-.home ul {
-  display: flex;
-  justify-content: center;
-  gap: 10%;
-  font-size: 32px;
-  margin: auto;
-  padding: 15px;
-
-  background-color: rgb(127, 127, 127);
-}
