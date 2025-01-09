@@ -1,3 +1,35 @@
+async function getRestaurantFeatures() {
+  const points = await fetch("/api/points")
+    .then((res) => res.json())
+    .catch((err) => {
+      console.error(err);
+      return [];
+    });
+  const features = [];
+  points.map((point) =>
+    features.push({
+      type: "Feature",
+      properties: {
+        day: point.day,
+        name: point.name,
+        address: point.address,
+        evaluation: point.evaluation,
+        comment: point.comment,
+      },
+      geometry: {
+        type: "Point",
+        coordinates: [point.lon, point.lat],
+      },
+    })
+  );
+  return features;
+}
+
+let features = [];
+getRestaurantFeatures().then((res) => {
+  features = res;
+});
+
 const map = new maplibregl.Map({
   container: "map",
   center: [137.3090958, 35.1323874],
@@ -33,22 +65,7 @@ map.on("load", async () => {
       type: "FeatureCollection",
       name: "point",
       crs: { type: "name", properties: { name: "urn:ogc:def:crs:OGC:1.3:CRS84" } },
-      features: [
-        {
-          type: "Feature",
-          properties: {
-            day: "2024-11-23 18:00:00",
-            name: "香嵐渓",
-            address: "愛知県豊田市足助町飯盛",
-            evaluation: 5,
-            comment: "紅葉めちゃ綺麗！！！",
-          },
-          geometry: {
-            type: "Point",
-            coordinates: [137.3090958, 35.1323874],
-          },
-        },
-      ],
+      features: features,
     },
   });
   map.addLayer({
