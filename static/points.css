@@ -1,0 +1,116 @@
+/* trip.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Add styles for the header and home button */
+.web-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 80%;
+  margin: 20px auto;
+  padding: 15px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.web-title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.home-button {
+  font-size: 16px;
+  color: #000;
+  text-decoration: none;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  transition: background-color 0.3s ease;
+}
+
+.home-button:hover {
+  background-color: #ddd;
+}
+
+.page-title {
+  text-align: left;
+  font-size: 20px;
+  margin: 10px auto 5px auto; /* 下の余白を調整 */
+  max-width: 72%;
+  font-weight: bold;
+}
+
+.front-text {
+  display: flex;
+}
+
+.page-title {
+  text-align: left;
+  font-size: 20px;
+  margin: 10px auto 5px auto; /* 下の余白を調整 */
+  max-width: 72%;
+  font-weight: bold;
+}
+
+main {
+  margin-top: 10px;
+}
+
+.comment-box {
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 70%;
+}
+
+.comment-box h2 {
+  padding: 0 10px;
+  margin: 15px 2px 0 2px;
+  border-bottom: 2px solid #ccc;
+}
+
+.comment-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #e6e6e6;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.comment-header .place-name {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.comment-header .date {
+  font-size: 14px;
+  color: #555;
+}
+
+.comment-content {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px 5px 10px;
+  font-size: 1.2rem;
+  border-bottom: #000 1px solid;
+}
+
+.comment-content p {
+  margin: 0;
+}
