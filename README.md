@@ -16,3 +16,10 @@ pip3 install -r requirements.txt
 ```shell
 python3 app.py
 ```
+
+## シード
+デモ用のデータを追加する
+※既存のデータは削除されます
+```shell
+python3 seed.py
+```
