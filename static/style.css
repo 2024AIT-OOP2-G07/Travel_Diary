@@ -1,6 +1,12 @@
-* {
+body {
+  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f8f8f8;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .home h1 {
@@ -17,6 +23,7 @@
   gap: 10%;
   font-size: 32px;
   margin: auto;
-  background-color: azure;
-}
+  padding: 15px;
 
+  background-color: rgb(127, 127, 127);
+}

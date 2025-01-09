@@ -9,7 +9,10 @@
     <link href="https://unpkg.com/maplibre-gl@4.3.2/dist/maplibre-gl.css" rel="stylesheet" />
   </head>
   <body>
-    <h1><a href="{{ url_for('index') }}" class="no-line">旅日記Web</a></h1>
+    <header class="web-title-container">
+      <h1 class="web-title"><a href="{{ url_for('index') }}" class="home">旅日記Web</a></h1>
+      <a href="{{ url_for('index') }}" class="home-button">ホーム</a>
+    </header>
     <div class="line"></div>
     <div id="map" />
   </body>
