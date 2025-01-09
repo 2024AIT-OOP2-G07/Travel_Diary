@@ -32,7 +32,7 @@ getRestaurantFeatures().then((res) => {
 
 const map = new maplibregl.Map({
   container: "map",
-  center: [137.3090958, 35.1323874],
+  center: [136.8866387, 35.1723783],
   maxPitch: 85,
   zoom: 14,
   style: {
