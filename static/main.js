@@ -86,6 +86,7 @@ map.on("click", "trip_point", (e) => {
     <p>${e.features[0].properties.address}</p>
     <p>評価: ${e.features[0].properties.evaluation}</p>
     <p>${e.features[0].properties.comment}</p>
+    <a href="/points#${e.features[0].properties.name}">詳細を見る</a>
     `;
 
   while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
