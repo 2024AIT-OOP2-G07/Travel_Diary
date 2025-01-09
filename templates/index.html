@@ -3,15 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <title>旅日記web</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='home.css') }}"
+    />
   </head>
-  <body class="home">
-    <h1>旅日記web</h1>
-    <ul>
-      <div><a href="{{ url_for('add.list') }}">記録する</a></div>
-      <div><a href="{{ url_for('trip.list')}}">人気の場所</a></div>
-      <div><a href="{{ url_for('points.list')}}">投稿を見る</a></div>
-      <div><a href="{{ url_for('map.list')}}">地図で見る</a></div>
-    </ul>
+  <body>
+    <div class="container">
+      <h1>旅日記web</h1>
+      <div class="links">
+        <a href="{{ url_for('add.list') }}">記録する</a>
+        <a href="{{ url_for('trip.list')}}">人気の場所</a>
+        <a href="{{ url_for('points.list')}}">投稿を見る</a>
+        <a href="{{ url_for('map.list')}}">地図で見る</a>
+      </div>
+    </div>
   </body>
 </html>
