@@ -12,6 +12,10 @@
   margin: 20px;
 }
 
+.home a {
+  color: black;
+}
+
 .title {
   margin-top: 20px;
   margin-bottom: 0px;
@@ -34,8 +38,8 @@
 }
 
 .grid div input {
-width: 100%;
-height: 100%;
+  width: 100%;
+  height: 100%;
 }
 
 .submit {
@@ -43,13 +47,13 @@ height: 100%;
   font-size: 20px;
 }
 
-select{
+select {
   width: 100%;
   height: 100%;
-  background-color:gainsboro;
+  background-color: gainsboro;
 }
 
-input{
+input {
   border: none;
-  background-color:gainsboro;
+  background-color: gainsboro;
 }
