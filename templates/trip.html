@@ -11,7 +11,13 @@
       <h1 class="web-title"><a href="{{ url_for('index') }}">旅日記Web</a></h1>
       <a href="{{ url_for('index') }}" class="home-button">ホーム</a>
     </header>
-    <h1 class="page-title">人気の場所</h1>
+    <div class="page-title-container">
+      <h1 class="page-title">人気の場所</h1>
+      <form method="post" class="search-form">
+        <label>住所: <input type="text" name="address"></label>
+        <button type="submit">検索</button>
+      </form>
+    </div>
     <main>
       {% for trip_data in trip_data %}
       <div class="comment-box">
