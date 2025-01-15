@@ -51,15 +51,24 @@ a {
 
 .front-text {
   display: flex;
-  
+}
+
+.page-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  margin: 20px auto;
+  padding: 15px 0;
+  width: 80%;
+  max-width: 71%;
 }
 
 .page-title{
-  text-align: left;
+  margin: 0;
   font-size: 20px;
-  margin: 10px auto 5px auto; /* 下の余白を調整 */
-  max-width: 72%;
   font-weight: bold;
+  text-align: left;
 }
 
 main {
